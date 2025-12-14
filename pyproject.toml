@@ -4,4 +4,12 @@ version = "0.1.0"
 description = "Analyzes the fly genome"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "biopython>=1.86",
+]
+
+[tool.ruff.lint]
+select = ["D"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
