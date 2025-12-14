@@ -6,19 +6,18 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-from pathlib import Path
 import sys
-
+from pathlib import Path
 
 project = "Fly"
 copyright = "2025, CoolTrainerEX"
 author = "CoolTrainerEX"
-release = "0.1.0"
+release = "1.0.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx.ext.githubpages"]
+extensions = ["sphinx.ext.autodoc", "sphinx.ext.githubpages", "sphinx.ext.napoleon"]
 
 sys.path.insert(0, str(Path("..").resolve()))
 
