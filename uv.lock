@@ -126,14 +126,18 @@ version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
     { name = "biopython" },
+]
+
+[package.dev-dependencies]
+dev = [
     { name = "sphinx" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "biopython", specifier = ">=1.86" },
-    { name = "sphinx", specifier = ">=9.0.4" },
-]
+requires-dist = [{ name = "biopython", specifier = ">=1.86" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "sphinx", specifier = ">=9.0.4" }]
 
 [[package]]
 name = "idna"
